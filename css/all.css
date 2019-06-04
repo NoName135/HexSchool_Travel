@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.pure-button {
+  /* Structure */
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.pure-button {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/*csslint outline-none:false*/
+.pure-button {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px; }
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+  /* csslint ignore:start */
+  filter: alpha(opacity=90);
+  /* csslint ignore:end */
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }
+
+.pure-button:focus {
+  outline: 0; }
+
+.pure-button-active,
+.pure-button:active {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  border-color: #000\9; }
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  /*header Start*/
+  /*content Start*/
+  /*footer Start*/ }
+  .wrap .header {
+    background-image: url(../img/Hero.png);
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .wrap .header h1 {
+      font-size: 40px;
+      color: #FFFFFF;
+      letter-spacing: 3.89px;
+      text-align: center;
+      padding-top: 90px; }
+    .wrap .header .location-wrap {
+      max-width: 352px;
+      height: auto;
+      margin: 0 auto; }
+      .wrap .header .location-wrap .location {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 352px;
+        height: 48px;
+        margin-top: 96px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 3px solid #FFFFFF;
+        border-radius: 3px;
+        font-size: 18px; }
+    .wrap .header .popular-district {
+      margin-top: 80px;
+      max-width: 800px;
+      height: 112px;
+      margin: 80px auto 0 auto;
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px; }
+      .wrap .header .popular-district h3 {
+        padding: 20px 0 15px 25px;
+        font-size: 18px; }
+      .wrap .header .popular-district li {
+        float: left;
+        margin: 0 5%;
+        width: 15%;
+        height: 42px; }
+        .wrap .header .popular-district li button {
+          width: 100%; }
+        .wrap .header .popular-district li .Lingya {
+          background: #8A82CC; }
+        .wrap .header .popular-district li .Sanmin {
+          background: #FFA782; }
+        .wrap .header .popular-district li .Xinxing {
+          background: #F5D005; }
+        .wrap .header .popular-district li .Meinong {
+          background: #559AC8; }
+        .wrap .header .popular-district li .pure-button {
+          border-radius: 5px;
+          font-size: 20px;
+          color: #FFFFFF; }
+          .wrap .header .popular-district li .pure-button:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
+  .wrap .content {
+    clear: both;
+    padding-top: 67px; }
+    .wrap .content .line {
+      position: relative;
+      margin: 0 auto;
+      width: 900px;
+      border-top: 2px dashed #559AC8; }
+      .wrap .content .line .circle {
+        position: absolute;
+        top: -13px;
+        left: 48.7%;
+        width: 24px;
+        height: 24px;
+        background: #ffffff;
+        border-radius: 50%;
+        border: 2px solid #559AC8;
+        background-image: url(../img/icons_down2.png);
+        background-repeat: no-repeat;
+        background-position: center; }
+    .wrap .content h2 {
+      margin: 65px 0 25px 0;
+      text-align: center;
+      font-size: 36px;
+      color: #8A82CC; }
+    .wrap .content .list {
+      margin-left: 40px; }
+      .wrap .content .list li {
+        float: left;
+        width: 48%;
+        min-height: 280px;
+        margin-right: 2%;
+        margin-bottom: 36px; }
+        .wrap .content .list li .img-wrap {
+          height: 155px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center; }
+          .wrap .content .list li .img-wrap h3 {
+            float: left;
+            padding-top: 117px;
+            padding-left: 22px;
+            font-size: 24px;
+            color: #FFFFFF; }
+          .wrap .content .list li .img-wrap h4 {
+            float: right;
+            padding-top: 125px;
+            padding-right: 19px;
+            font-size: 16px;
+            color: #FFFFFF; }
+        .wrap .content .list li p {
+          padding-top: 14px;
+          padding-left: 24px; }
+          .wrap .content .list li p .clock {
+            padding-right: 9px; }
+          .wrap .content .list li p .pin {
+            padding-right: 10px; }
+        .wrap .content .list li .phone-wrap {
+          float: left; }
+          .wrap .content .list li .phone-wrap .phone {
+            padding-right: 12px; }
+        .wrap .content .list li .tag-wrap {
+          float: right; }
+          .wrap .content .list li .tag-wrap .tag {
+            padding-right: 8px; }
+    .wrap .content .page-list {
+      clear: both;
+      overflow: hidden;
+      margin-top: 14px;
+      margin-bottom: 20px;
+      color: #4A4A4A;
+      font-size: 18px;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .wrap .content .page-list span {
+        display: inline-block;
+        padding: 3px 8px; }
+      .wrap .content .page-list span:not(.disabled) {
+        cursor: pointer; }
+      .wrap .content .page-list span:not(.disabled):hover {
+        color: #559AC8; }
+      .wrap .content .page-list span.disabled, .wrap .content .page-list span.current {
+        pointer-events: none; }
+      .wrap .content .page-list span.disabled {
+        opacity: 0.4; }
+      .wrap .content .page-list span.current {
+        color: #559AC8; }
+  .wrap .footer {
+    background: #559AC8; }
+    .wrap .footer h4 {
+      padding: 25px 0 15px 0;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-align: center; }
+    .wrap .footer p {
+      padding-bottom: 20px;
+      font-size: 14px;
+      color: #FFD366;
+      text-align: center; }
+
+.slidetop {
+  position: fixed;
+  bottom: 50px;
+  right: 25px; }
